@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Board</title>
+	<link rel="stylesheet" type="text/css" href="../static/dashboard.css">
+</head>
+<body>
+  <!-- navbar -->
+
+
+
+
+
+
+
+
+  <a href="{{url_for('sell_new')}}">Add new</a>
+  <h1>Sell</h1>
+  {% for i in items %}
+  <p>{{i.item}}</p>
+  <p>{{i.desc}}</p>
+  <p>{{i.price}}</p>
+  <a href="{{url_for('sell_edit')}}">
+  {% endfor %}
+</body>
+</html>
