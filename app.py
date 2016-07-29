@@ -30,14 +30,6 @@ def sell_new():
     else:
         return render_template('sell_new.html')
 
-# @app.route('/dashboard/sell/edit', methods=['GET', 'EDIT'])
-# def sell_edit(sell_id):
-#     editedItem = session.query(Sell).filter_by(sell_id)
-#     if request.method = 'POST':
-#         if request.form['']
-
-# @app.route('/dashboard/')
-
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0', port=5000)
