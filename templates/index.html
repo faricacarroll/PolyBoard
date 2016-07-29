@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>PolyBoard</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/bootsrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
-</head>
-<body>
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 left">
+	<head>
+		<title>PolyBoard</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	</head>
+	<body>
+		<div class="headers">
 			<h1 id="logo">PolyBoard</h1>
 			<p id="tag">A bulletin board for Cal Poly students.</p>
 		</div>
-		<div class="col-md-6 right">
+		<div class="inputs">
 			<form method="POST">
-				user:<input type="text" name="user"><br>
-				password:<input type="password" name="pass">
-				<input type='submit' value='Create'>
+				<input id="username" type="text" name="user" placeholder="username">
+				<input id="password" type="password" name="pass" placeholder="password">
+				<input id="submit" type='submit' value='login'>
 			</form>
 		</div>
-	</div>
-</div>
-<script src="../static/js/bootstrap.min.js">
-</body>
+	</body>
 </html>

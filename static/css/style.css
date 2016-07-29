@@ -1,15 +1,81 @@
 @font-face {
-    font-family: 'San Francisco';
-    font-weight: 300;
-	  src: url('../static/fonts/SanFranciscoDisplay-Regular.otf');
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
 }
-
-@font-face {
-    font-family: 'San Francisco';
-    font-weight: 200;
-	  src: url('../static/fonts/SanFranciscoDisplay-Light.otf');
-}
+/*
+SAN FRANSCISCO WEB FONTS
+https://gist.github.com/AndrewBarba/2c0f6612ceef30f5f55d
+*/
 
 body {
 	font-family: 'San Francisco';
+    color: white;
+    background-color: black;
+    margin: 0;
+    height: 100%;
+}
+h1 {
+    font-size: 50px;
+    margin:0;
+}
+p {
+    font-size: 25px;
+    margin: 0;
+}
+.headers {
+    display: inline-block;
+    position: absolute;;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 130px;
+}
+.inputs {
+    display: inline-block;
+    position: absolute;;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 130px;
+
+}
+input {
+    display: block;
+    border-style: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+}
+#username {
+    border-bottom: 1px solid white;
+    padding: 6px 0 6px 0;
+}
+#password {
+    border-bottom: 1px solid white;
+    padding: 6px 0 6px 0;
+
+}
+#submit {
+    color: white;
+    padding: 6px 0 6px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .headers {
+        position: relative;
+        display: block;
+        top:auto;
+        transform: none;
+        left: 75px;
+        margin: 100px 0 30px 0;
+    }
+    .inputs {
+        position: relative;
+        display: block;
+        top:auto;
+        transform: none;
+        right: auto;
+        left: 75px;
+    }
+
 }
