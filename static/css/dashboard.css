@@ -1,1 +1,32 @@
-@@import @url("style.css");
+html {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+body {
+  font: menu;
+}
+
+#logo {
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.dash-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.dash-sell {
+  width: 33.33%;
+}
+
+.dash-ride {
+  width: 33.33%;
+}
+
+.dash-textbook {
+  width: 33.33%;
+}
