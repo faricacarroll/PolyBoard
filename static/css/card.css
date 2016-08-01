@@ -1,0 +1,60 @@
+.card {
+  border: 2px solid #979797;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.card-text {
+  font: menu;
+  font-size: 16px;
+  margin:12px;
+}
+
+#card-price {
+  float: right;
+  color: #7ED321;
+}
+
+#card-name {
+  font-weight: bold;
+}
+
+.card-desc {
+  margin-top: 10px;
+}
+
+.card-message {
+  margin-top: 10px;
+  color: #4A90E2;
+}
+
+.card-city-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.card-line {
+  width: 10%;
+}
+
+#card-line {
+  height: 60px;
+}
+
+.card-cities {
+  width: 90%;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.card-class {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.card-textbook {
+  margin-top: 5px;
+}
