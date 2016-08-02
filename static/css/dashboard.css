@@ -12,6 +12,10 @@ body {
   font-size: 50px;
 }
 
+.dash-col-title {
+  font-size: 30px;
+}
+
 .dash-cards {
   width: 100%;
   display: flex;

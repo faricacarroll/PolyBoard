@@ -15,8 +15,9 @@
   <div class="dash-cards">
     <!-- Sell Cards -->
     <div class="dash-sell">
-      {% for i in items %}
-      <div class="card">
+      <span class="dash-col-title">For Sale</span>
+      {% for i in sell_items %}
+      <div class="card animated bounceOutLeft">
         <div class="card-text">
           <span id="card-name">John Smith</span>
           <span id="card-price">${{i.price}}</span><br>
@@ -26,10 +27,48 @@
       </div>
       {% endfor %}
     </div>
+
     <!-- Travel Card -->
-    <div class="dash-ride"></div>
+    <div class="dash-ride">
+      <span class="dash-col-title">Rides</span>
+      {% for i in ride_items %}
+      <div class="card">
+        <div class="card-text">
+          <span id="card-name">John Smith</span>
+          <span id="card-price">${{i.price}}</span><br>
+          <div class="card-city-info">
+            <div class="card-line">
+              <img id="card-line" src="../static/assets/travel.svg"/>
+            </div>
+            <div class="card-cities">
+              <span id="card-origin">{{i.origin}}</span><br>
+              <span id="card-destination">{{i.destination}}</span>
+            </div>
+          </div>
+          <div class="card-date">Saturday, 5:30pm<br> 12th September, 2016</div>
+          <div class="card-message">Send a message</div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+
     <!-- Textbook Card -->
-    <div class="dash-textbook"></div>
+    <div class="dash-textbook">
+      <span class="dash-col-title">Textbooks</span>
+      {% for i in textbook_items %}
+      <div class="card">
+        <div class="card-text">
+          <span id="card-name">John Smith</span>
+          <span id="card-price">${{i.price}}</span><br>
+          <div class="card-class">{{i.lecture}}</div>
+          <div class="card-textbook">{{i.textbook}}</div>
+          <div class="card-message">Send a message</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
+
+
 </body>
 </html>
