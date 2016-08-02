@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Board</title>
+</head>
+<body>
+  <form action="{{url_for('textbook_new')}}" method="POST">
+    <p>Class:</p>
+    <input type="text" size="50" name="lecture"><br>
+    <p>Textbook:</p>
+    <input type="text" size="50" name="textbook">
+    <p>Price:</p>
+    <input type="text" name="price">
+    <input type='submit' value='Create'>
+  </form>
+</body>
+</html>
