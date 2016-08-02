@@ -16,6 +16,8 @@
     <!-- Sell Cards -->
     <div class="dash-sell">
       <span class="dash-col-title">For Sale</span>
+      <a href="{{url_for('sell_new')}}">+</a>
+      <i class="fa fa-plus" aria-hidden="true"></i>
       {% for i in sell_items %}
       <div class="card animated bounceOutLeft">
         <div class="card-text">
@@ -31,6 +33,7 @@
     <!-- Travel Card -->
     <div class="dash-ride">
       <span class="dash-col-title">Rides</span>
+      <a href="{{url_for('ride_new')}}">+</a>
       {% for i in ride_items %}
       <div class="card">
         <div class="card-text">
@@ -55,6 +58,7 @@
     <!-- Textbook Card -->
     <div class="dash-textbook">
       <span class="dash-col-title">Textbooks</span>
+      <a href="{{url_for('textbook_new')}}">+</a>
       {% for i in textbook_items %}
       <div class="card">
         <div class="card-text">
